@@ -56,13 +56,13 @@
   box-shadow: 0 0 30px #ef4ba5;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 768px) {
   .clock {
     background-color: #8e4162;
-    width: 92vw;
+    width: 93vw;
     height: 46vh;
-    margin-left: 4%;
-    margin-top: 42%;
+    margin-left: 3%;
+    margin-top: 43%;
     border: 2px solid;
     border-color: #ef4ba5;
     display: flex;
@@ -81,8 +81,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 57px;
+    padding-top: 69px;
     border-radius: 30px;
+  }
+  .time span {
+    background-color: #41393e;
+    border-radius: 20px;
+    font-size: 5rem;
   }
   .date {
     text-align: center;
@@ -92,13 +97,13 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 425px) {
   .clock {
     background-color: #8e4162;
-    width: 84vw;
+    width: 93vw;
     height: 46vh;
-    margin-left: 1%;
-    margin-top: 17%;
+    margin-left: 3%;
+    margin-top: 49%;
     border: 2px solid;
     border-color: #ef4ba5;
     display: flex;
@@ -110,15 +115,61 @@
     background-color: #8e4162;
     letter-spacing: 10px;
     font-weight: bolder;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .time {
     background-color: #8e4162;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 57px;
+    padding-top: 69px;
     border-radius: 30px;
+  }
+  .time span {
+    background-color: #41393e;
+    border-radius: 20px;
+    font-size: 4rem;
+  }
+  .date {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clock {
+    background-color: #8e4162;
+    width: 93vw;
+    height: 46vh;
+    margin-left: 2%;
+    margin-top: 54%;
+    border: 2px solid;
+    border-color: #ef4ba5;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+    border-radius: 30px;
+  }
+  .timestring {
+    background-color: #8e4162;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+  .time {
+    background-color: #8e4162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 69px;
+    border-radius: 30px;
+  }
+  .time span {
+    background-color: #41393e;
+    border-radius: 20px;
+    font-size: 4rem;
   }
   .date {
     text-align: center;
