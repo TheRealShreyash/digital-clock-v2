@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* meridian color #C7E8F3 */
+* {
+  margin: 0;
+  border: border-box;
+  background-color: #41393e;
+  color: #eda2c0;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+.clock {
+  background-color: #8e4162;
+  width: 50vw;
+  height: 50vh;
+  margin-left: 26%;
+  margin-top: 10%;
+  border: 2px solid;
+  border-color: #ef4ba5;
+  display: flex;
+  flex-direction: column;
+  transition: 500ms;
+  border-radius: 30px;
+}
+
+.time {
+  background-color: #8e4162;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  border-radius: 30px;
+}
+
+.timestring {
+  background-color: #8e4162;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  font-size: 10rem;
+}
+
+.time span {
+  background-color: #41393e;
+  border-radius: 20px;
+  font-size: 5rem;
+}
+
+.date {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.clock:hover {
+  transform: translateY(-1%);
+  box-shadow: 0 0 30px #ef4ba5;
+}
+
+@media screen and (max-width: 380px) {
+  .clock {
+    background-color: #8e4162;
+    width: 92vw;
+    height: 46vh;
+    margin-left: 4%;
+    margin-top: 42%;
+    border: 2px solid;
+    border-color: #ef4ba5;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+    border-radius: 30px;
+  }
+  .timestring {
+    background-color: #8e4162;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+  .time {
+    background-color: #8e4162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 57px;
+    border-radius: 30px;
+  }
+  .date {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .clock {
+    background-color: #8e4162;
+    width: 84vw;
+    height: 46vh;
+    margin-left: 1%;
+    margin-top: 17%;
+    border: 2px solid;
+    border-color: #ef4ba5;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+    border-radius: 30px;
+  }
+  .timestring {
+    background-color: #8e4162;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-size: 5rem;
+  }
+  .time {
+    background-color: #8e4162;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 57px;
+    border-radius: 30px;
+  }
+  .date {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
