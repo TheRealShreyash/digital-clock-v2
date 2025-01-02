@@ -31,15 +31,13 @@ date.innerHTML = `${formattedDate}`;
 
 const updateTime = () => {
   const now = new Date();
-  const hours = now.getHours().toString().padStart(2, "0");
   const timeString = now.toLocaleTimeString("default", {
     hour: "2-digit",
     minute: "2-digit",
     hour12: true,
   });
-  const meridian = hours >= 12 ? "PM" : "AM";
 
-  meridian.innerHTML = meridian;
+  meridian.innerHTML = timeString.slice(6).toUpperCase();
   time.innerHTML = timeString.slice(0, 5);
 };
 
